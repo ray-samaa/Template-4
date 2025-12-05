@@ -697,6 +697,7 @@ a {
 
 .projects .projects-table tbody td img {
     width: 32px;
+    height: 32px;
     padding: 2px;
     background-color: white;
     border-radius: 50%;
@@ -1263,6 +1264,123 @@ a {
 /* end activities */
 /* end my skills and activities */
 /* end profile.html */
+/* start projects.html */
+.projects-container {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media (max-width: 767.99px) {
+    .projects-container {
+        grid-template-columns: minmax(200px, 1fr);
+    }
+}
+
+/* start projects */
+.project .date {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.project .team {
+    height: 80px;
+}
+
+.project .team::before {
+    content: "";
+    display: block;
+    height: calc(100% - 45px);
+}
+
+.project .team a {
+    position: relative;
+    margin-top: auto;
+}
+
+.project .team a:not(:first-of-type) {
+    margin-left: -20px;
+}
+
+.project .team a:hover {
+    z-index: 1;
+}
+
+.project .team a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.project .content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+@media (max-width: 767.99px) {
+    .project .content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+.project .content span {
+    padding: 3px 8px;
+}
+
+
+
+@media (max-width: 767.99px) {
+    .project .footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.project .footer div {
+    max-width: 100%;
+    width: 260px;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 16px;
+}
+
+@media (max-width: 767.99px) {
+    .project .footer div {
+        margin-bottom: 15px;
+    }
+}
+
+.project .footer div span {
+    height: 100%;
+    border-radius: 16px;
+}
+
+
+
+/* end projects */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end projects.html */
 /* start courses.html */
 /* start courses container */
 .courses-container {
