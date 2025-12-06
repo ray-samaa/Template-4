@@ -1540,21 +1540,21 @@ a {
     gap: 20px;
 }
 
-.file i {
+.files .file i {
     font-size: 16px;
 }
 
-.file img {
+.files .file img {
     width: 64px;
     height: 64px;
     transition: 0.3s;
 }
 
-.file:hover img {
+.files .file:hover img {
     transform: rotate(5deg);
 }
 
-.file .info {
+.files .file .info {
     border-top: 1px solid #eee;
 }
 
